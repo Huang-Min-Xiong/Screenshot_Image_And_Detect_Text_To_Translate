@@ -1,0 +1,2 @@
+# Screenshot_Image_And_Detect_Text_To_Translate
+ Screenshot_Image_And_Detect_Text_To_Translate
