@@ -1,0 +1,5 @@
+PyAutoGUI==0.9.47
+opencv_python==4.1.1.26
+googletrans==2.4.0
+pytesseract==0.3.4
+keyboard==0.13.5
