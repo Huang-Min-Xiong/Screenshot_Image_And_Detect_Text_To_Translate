@@ -19,6 +19,8 @@ Tesseract-OCR
 
 `pytesseract.pytesseract.tesseract_cmd =r'C:\Program Files (x86)\Tesseract-OCR\tesseract.exe'`
 
+- encoding="utf-8": 解決UnicodeDecodeError問題
+
 #### 透過keyboard套件來實作功能
 - keyboard.is_pressed(): 判斷是否輸入按鍵
 
