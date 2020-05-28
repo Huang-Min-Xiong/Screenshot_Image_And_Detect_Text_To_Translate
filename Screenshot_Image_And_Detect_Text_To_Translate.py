@@ -36,10 +36,10 @@ def Detect_image_text_and_translate():
     Translation_Text=translator.translate(text,dest='zh-TW') #轉成繁體
     print('翻譯後:\n'+str(Translation_Text.text)+'\n')
 
-    with open(r".\Detect_Text.txt","w") as f:
+    with open(r".\Detect_Text.txt","w",encoding="utf-8") as f:
         f.write('翻譯前:\n'+str(text)+'\n\n') #翻譯前寫入文字檔
-        f.write('翻譯後:\n'+str(Translation_Text.text)+'\n\n') #翻譯後寫入文字檔
-        print('已寫入文字檔!')
+        f.write('翻譯後:\n'+str(Translation_Text.text)+'\n\n') #翻譯後寫入文字        
+        pyautogui.alert('已寫入文字檔!')
 
 
 if __name__ == "__main__":
