@@ -36,3 +36,14 @@ Tesseract-OCR
 - 將取出的文字翻譯成繁體字
 
 - 最後將翻譯前與翻譯後的文字寫入txt檔中
+
+#### 執行結果
+![image](img/img1.PNG)
+
+![image](img/img2.PNG)
+
+![image](img/img3.PNG)
+
+![image](img/img4.PNG)
+
+![image](img/img5.PNG)
