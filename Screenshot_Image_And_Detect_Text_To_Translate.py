@@ -5,7 +5,7 @@ from cv2 import cv2
 from googletrans import Translator
 
 #tesseract.exe安裝路徑
-pytesseract.pytesseract.tesseract_cmd=r'C:\Program Files (x86)\Tesseract-OCR\tesseract.exe'
+pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files (x86)\Tesseract-OCR\tesseract.exe'
 
 #左上角座標
 def Upper_left_corner():
@@ -13,7 +13,7 @@ def Upper_left_corner():
     while True:
         if keyboard.is_pressed('z'):
             global pos1
-            pos1=pyautogui.position()
+            pos1 = pyautogui.position()
             print(pos1)
             break
 
@@ -23,17 +23,17 @@ def Lower_right_corner():
     while True:
         if keyboard.is_pressed('x'):
             global pos2
-            pos2=pyautogui.position()
+            pos2 = pyautogui.position()
             print(pos2)
             break
 
 #偵測圖像文字且翻譯文字
 def Detect_image_text_and_translate():
-    img=cv2.imread(r'.\img.png')
-    text=pytesseract.image_to_string(img)
+    img = cv2.imread(r'.\img.png')
+    text = pytesseract.image_to_string(img)
     print('翻譯前:\n'+str(text)+'\n')
     translator = Translator()
-    Translation_Text=translator.translate(text,dest='zh-TW') #轉成繁體
+    Translation_Text = translator.translate(text,dest='zh-TW') #轉成繁體
     print('翻譯後:\n'+str(Translation_Text.text)+'\n')
 
     with open(r".\Detect_Text.txt","w",encoding="utf-8") as f:
@@ -45,11 +45,11 @@ def Detect_image_text_and_translate():
 if __name__ == "__main__":
     Upper_left_corner()
     Lower_right_corner()
-    x=pos1.x
-    y=pos1.y
-    w=pos2.x-pos1.x
-    h=pos2.y-pos1.y
-    img=pyautogui.screenshot(region=(x,y,w,h))
+    x = pos1.x
+    y = pos1.y
+    w = pos2.x-pos1.x
+    h = pos2.y-pos1.y
+    img = pyautogui.screenshot(region=(x,y,w,h))
     img.save(r'.\img.png')
     pyautogui.alert('截圖已成功!')
     Detect_image_text_and_translate()
