@@ -32,7 +32,7 @@ Tesseract-OCR
 #### 透過pytesseract套件來實作功能
 - 辨識圖像中的文字並取出
 
-#### 透過Translator套件來實作功能
+#### 透過google_trans_new套件來實作功能
 - 將取出的文字翻譯成繁體字
 
 - 最後將翻譯前與翻譯後的文字寫入txt檔中
