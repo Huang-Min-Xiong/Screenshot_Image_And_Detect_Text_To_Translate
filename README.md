@@ -49,6 +49,10 @@ Tesseract-OCR
 
 ![image](img/img3.PNG)
 
-![image](img/img4.PNG)
+![image](img/img6.png)
 
 ![image](img/img5.PNG)
+
+![image](img/img4.PNG)
+
+
